@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "J2+5FVoUdnQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\X-ChangeWebBackend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mohamed\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.9\\microsoft.aspnetcore.openapi.9.0.9.nupkg.sha512",
+    "C:\\Users\\Mohamed\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512",
+    "C:\\Users\\Mohamed\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\7.2.0\\swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
