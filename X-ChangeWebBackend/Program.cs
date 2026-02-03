@@ -1,13 +1,14 @@
+using Application.Behaviors;
+using Application.Features.Users.Commands.Register;
 using Domain.Entities.System;
 using Infrastructure;
+using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// =======================
-// Database + EF Core
-// =======================
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -15,28 +16,72 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     )
 );
 
-// =======================
-// Identity
-// =======================
+builder.AddApplicationServices();
+
+
+
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
 {
-    options.Password.RequiredLength = 8;
-    options.Password.RequireDigit = true;
-    options.Password.RequireUppercase = false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireDigit = false;
     options.Password.RequireNonAlphanumeric = false;
 
-    options.User.RequireUniqueEmail = true;
 })
 .AddEntityFrameworkStores<ApplicationDbContext>()
 .AddDefaultTokenProviders();
-
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(RegisterUserCommand).Assembly);
+});
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(typeof(RegisterUserCommand).Assembly);
+});
+
+builder.Services.AddTransient(
+    typeof(IPipelineBehavior<,>),
+    typeof(ValidationBehavior<,>));
+builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
+
+//app.Use(async (context, next) =>
+//{
+//    try
+//    {
+//        await next();
+//    }
+//    catch (FluentValidation.ValidationException ex)
+//    {
+//        context.Response.StatusCode = 400;
+//        context.Response.ContentType = "application/json";
+
+//        var errors = ex.Errors
+//            .GroupBy(e => e.PropertyName)
+//            .ToDictionary(
+//                g => g.Key,
+//                g => g.Select(e => e.ErrorMessage).ToArray()
+//            );
+
+//        var response = new
+//        {
+//            status = 400,
+//            message = "Validation failed",
+//            errors = errors
+//        };
+
+//        await context.Response.WriteAsJsonAsync(response);
+//    }
+//});
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

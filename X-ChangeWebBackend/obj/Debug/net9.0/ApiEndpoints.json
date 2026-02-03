@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "X_ChangeWebBackend.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Users.Commands.Register.RegisterUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "X_ChangeWebBackend.Controllers.TodoController",
     "Method": "GetTodos",
     "RelativePath": "api/Todo",
