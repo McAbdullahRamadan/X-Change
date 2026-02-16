@@ -1,4 +1,4 @@
-﻿using Application.DTOs;
+﻿using Application.Responses;
 using Domain.Entities.System;
 using MediatR;
 
@@ -18,6 +18,6 @@ namespace Application.Features.Users.Commands.Register
          string Country,
          string? NationalId,
          string? University,
-         string? Major) : IRequest<AuthResultDto>
+         string? Major) : IRequest<DataResponse<string>>
     { }
 }

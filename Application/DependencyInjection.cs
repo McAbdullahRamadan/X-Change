@@ -1,4 +1,6 @@
 ﻿using Application.Behaviors;
+using Application.Interfaces;
+using Application.Services.Impelementation;
 using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.Hosting;
@@ -18,6 +20,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
                 cfg.AddBehavior(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
             });
+            builder.Services.AddScoped<IAuthService, AuthService>();
 
         }
 

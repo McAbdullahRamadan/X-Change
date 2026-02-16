@@ -2,7 +2,7 @@
   {
     "ContainingType": "X_ChangeWebBackend.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/auth/register",
+    "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

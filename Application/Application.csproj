@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Features\Courses\" />
     <Folder Include="Features\Enrollments\" />
-    <Folder Include="Interfaces\" />
   </ItemGroup>
 
   <ItemGroup>

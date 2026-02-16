@@ -53,34 +53,7 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-//app.Use(async (context, next) =>
-//{
-//    try
-//    {
-//        await next();
-//    }
-//    catch (FluentValidation.ValidationException ex)
-//    {
-//        context.Response.StatusCode = 400;
-//        context.Response.ContentType = "application/json";
 
-//        var errors = ex.Errors
-//            .GroupBy(e => e.PropertyName)
-//            .ToDictionary(
-//                g => g.Key,
-//                g => g.Select(e => e.ErrorMessage).ToArray()
-//            );
-
-//        var response = new
-//        {
-//            status = 400,
-//            message = "Validation failed",
-//            errors = errors
-//        };
-
-//        await context.Response.WriteAsJsonAsync(response);
-//    }
-//});
 
 
 // Configure the HTTP request pipeline.
@@ -94,6 +67,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthentication();
 
 app.UseAuthorization();
 
