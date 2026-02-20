@@ -21,6 +21,7 @@ namespace Infrastructure
         public DbSet<Lesson> Lessons => Set<Lesson>();
         public DbSet<Enrollment> Enrollments => Set<Enrollment>();
         public DbSet<ApplicationUserPasswordHistory> PasswordHistories => Set<ApplicationUserPasswordHistory>();
+        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
 
 
         protected override void OnModelCreating(ModelBuilder builder)

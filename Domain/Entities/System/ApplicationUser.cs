@@ -27,7 +27,7 @@ namespace Domain.Entities.System
         public ICollection<ApplicationUserToken> Tokens { get; set; } = new List<ApplicationUserToken>();
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
         public ICollection<ApplicationUserPasswordHistory> PasswordHistories { get; set; } = new List<ApplicationUserPasswordHistory>();
-
+        public ICollection<RefreshToken> RefreshTokens { get; set; } = new List<RefreshToken>();
     }
     public enum Gender { Male, Female, Other }
 

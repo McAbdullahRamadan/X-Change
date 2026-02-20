@@ -17,7 +17,7 @@ namespace X_ChangeWebBackend.BaseControl
         {
             if (result == null)
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    DataResponse<string>.Failure(new[] { "An unexpected error occurred." }));
+                    DataResponse<string>.BadRequest(new[] { "An unexpected error occurred." }));
 
             return result.Status switch
             {

@@ -3,52 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\basecontrol\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:basecontrol\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\responses\\dataresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\register\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\loginuserauth\\loginusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\services\\impelementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\validationuserregiser\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9FFD437-04B4-4B1B-A57D-3C9086C493FB}|..\\Infrastructure\\Infrastructure.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\infrastructure\\helper\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\interfaces\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\register\\registerusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\register\\validationuserregiser\\registeruservalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./X_ChangeEducation/True/SqlTable/dbo.AspNetUsers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\register\\registerusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\responses\\resultstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\common\\validationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\dtos\\registeruserdto\\registerusersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9FFD437-04B4-4B1B-A57D-3C9086C493FB}|..\\Infrastructure\\Infrastructure.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\infrastructure\\migrations\\20260202232056_fixdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9FFD437-04B4-4B1B-A57D-3C9086C493FB}|..\\Infrastructure\\Infrastructure.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\infrastructure\\migrations\\20260203003843_makerefreshtokennullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\loginuserauth\\loginusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,53 +59,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "LoginUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommandHandler.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommandHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADgvxUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-17T00:03:25.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAwwAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAADgvxkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:22:27.578Z",
+              "WhenOpened": "2026-02-17T00:03:25.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\BaseControl\\BaseController.cs",
-              "RelativeDocumentMoniker": "BaseControl\\BaseController.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\BaseControl\\BaseController.cs",
-              "RelativeToolTip": "BaseControl\\BaseController.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:31:45.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Services\\Impelementation\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\Application\\Services\\Impelementation\\AuthService.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Services\\Impelementation\\AuthService.cs",
               "RelativeToolTip": "..\\Application\\Services\\Impelementation\\AuthService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAIAwwEIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAASwDAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:24:09.491Z",
+              "WhenOpened": "2026-02-17T00:03:25.374Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DataResponse.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Responses\\DataResponse.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Responses\\DataResponse.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Responses\\DataResponse.cs",
-              "RelativeToolTip": "..\\Application\\Responses\\DataResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Title": "JwtTokenGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
+              "RelativeDocumentMoniker": "..\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
+              "RelativeToolTip": "..\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwFEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:57:01.245Z",
+              "WhenOpened": "2026-02-17T00:03:25.443Z",
               "EditorCaption": ""
             },
             {
@@ -132,35 +116,58 @@
               "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommandHandler.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommandHandler.cs",
               "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommandHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAADgvxUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:15:16.535Z",
+              "WhenOpened": "2026-02-19T22:54:04.527Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAmwD4AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "RegisterUserValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\Register\\ValidationUserRegiser\\RegisterUserValidator.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\Register\\ValidationUserRegiser\\RegisterUserValidator.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\Register\\ValidationUserRegiser\\RegisterUserValidator.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\Register\\ValidationUserRegiser\\RegisterUserValidator.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwCMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T01:10:16.87Z",
+              "WhenOpened": "2026-02-19T22:54:04.475Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "RegisterUserValidator.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\ValidationUserRegiser\\RegisterUserValidator.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\ValidationUserRegiser\\RegisterUserValidator.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\ValidationUserRegiser\\RegisterUserValidator.cs",
-              "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\ValidationUserRegiser\\RegisterUserValidator.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCMAAAAIAAAAAAAAAA==",
+              "Title": "dbo.AspNetUsers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/./X_ChangeEducation/True/SqlTable/dbo.AspNetUsers.sql",
+              "ToolTip": "dbo.AspNetUsers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-02-20T02:04:09.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:08:53.42Z",
+              "WhenOpened": "2026-02-19T03:27:28.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginUserCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommand.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommand.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommand.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\LoginUserAuth\\LoginUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T00:17:07.493Z",
               "EditorCaption": ""
             },
             {
@@ -171,96 +178,10 @@
               "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommand.cs",
               "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommand.cs",
               "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\Register\\RegisterUserCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:07:07.172Z",
+              "WhenOpened": "2026-02-18T00:17:14.169Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Interfaces\\IAuthService.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Interfaces\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Interfaces\\IAuthService.cs",
-              "RelativeToolTip": "..\\Application\\Interfaces\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T12:19:30.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ResultStatus.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Responses\\ResultStatus.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Responses\\ResultStatus.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Responses\\ResultStatus.cs",
-              "RelativeToolTip": "..\\Application\\Responses\\ResultStatus.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-16T13:06:42.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ValidationResult.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\common\\ValidationResult.cs",
-              "RelativeDocumentMoniker": "..\\Application\\common\\ValidationResult.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\common\\ValidationResult.cs",
-              "RelativeToolTip": "..\\Application\\common\\ValidationResult.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvxEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T17:52:57.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "BadRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Exceptions\\BadRequestException.cs",
-              "RelativeDocumentMoniker": "..\\Application\\Exceptions\\BadRequestException.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Exceptions\\BadRequestException.cs",
-              "RelativeToolTip": "..\\Application\\Exceptions\\BadRequestException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T17:59:36.314Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RegisterUsersDto.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\DTOs\\RegisterUserDto\\RegisterUsersDto.cs",
-              "RelativeDocumentMoniker": "..\\Application\\DTOs\\RegisterUserDto\\RegisterUsersDto.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\DTOs\\RegisterUserDto\\RegisterUsersDto.cs",
-              "RelativeToolTip": "..\\Application\\DTOs\\RegisterUserDto\\RegisterUsersDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:22:02.371Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20260202232056_FixData.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Migrations\\20260202232056_FixData.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Migrations\\20260202232056_FixData.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Migrations\\20260202232056_FixData.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Migrations\\20260202232056_FixData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T23:20:56.928Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20260203003843_MakeRefreshTokenNullable.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Migrations\\20260203003843_MakeRefreshTokenNullable.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Migrations\\20260203003843_MakeRefreshTokenNullable.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Migrations\\20260203003843_MakeRefreshTokenNullable.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Migrations\\20260203003843_MakeRefreshTokenNullable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T00:38:43.591Z"
             }
           ]
         }

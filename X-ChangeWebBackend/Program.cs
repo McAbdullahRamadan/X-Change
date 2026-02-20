@@ -2,6 +2,7 @@ using Application.Behaviors;
 using Application.Features.Users.Commands.Register;
 using Domain.Entities.System;
 using Infrastructure;
+using Infrastructure.Helper;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 
 builder.AddApplicationServices();
+builder.Services.AddInfrastructure();
 
 
 
@@ -36,10 +38,7 @@ builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(typeof(RegisterUserCommand).Assembly);
 });
-builder.Services.AddMediatR(cfg =>
-{
-    cfg.RegisterServicesFromAssembly(typeof(RegisterUserCommand).Assembly);
-});
+
 
 builder.Services.AddTransient(
     typeof(IPipelineBehavior<,>),
@@ -48,9 +47,23 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
+builder.Services.Configure<JwtSettings>(
+    builder.Configuration.GetSection("JwtSettings"));
+
+
+builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("XChange",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200")
+                  .AllowAnyHeader()
+                  .AllowAnyMethod();
+        });
+});
 var app = builder.Build();
 
 
@@ -67,6 +80,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("XChange");
 app.UseAuthentication();
 
 app.UseAuthorization();

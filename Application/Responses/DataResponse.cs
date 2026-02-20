@@ -4,8 +4,6 @@ namespace Application.Responses
 {
     public class DataResponse<T>
     {
-        public readonly HttpStatusCode StatusCode;
-
         public bool IsSuccess { get; private set; }
 
         public ResultStatus Status { get; private set; }
@@ -13,6 +11,10 @@ namespace Application.Responses
         public T? Data { get; private set; }
 
         public IEnumerable<string>? Errors { get; private set; }
+        public HttpStatusCode StatusCode { get; private set; }
+        public bool Succeeded { get; private set; }
+        public object Meta { get; private set; }
+        public string Message { get; private set; }
 
         private DataResponse(
             bool isSuccess,
@@ -26,27 +28,47 @@ namespace Application.Responses
             Errors = errors;
         }
 
-        public static DataResponse<T> Failure(IEnumerable<string> errors) =>
-     new DataResponse<T>(false, ResultStatus.BadRequest, default, errors);
-        public static DataResponse<T> Success(T data) =>
-            new DataResponse<T>(true, ResultStatus.Success, data, null);
+        public DataResponse()
+        {
+        }
 
+        public DataResponse<T> Success<T>(T entites, object meta = null)
+        {
+            return new DataResponse<T>()
+            {
+                Data = entites,
+                StatusCode = System.Net.HttpStatusCode.OK,
+                Succeeded = true,
+                Meta = meta,
+                Message = ""
+            };
+        }
+        // ✅ Success
+        public static DataResponse<T> Success(T data, string meesage) =>
+            new(true, ResultStatus.Success, data, null);
+
+        // ✅ Created
         public static DataResponse<T> Created(T data) =>
-            new DataResponse<T>(true, ResultStatus.Created, data, null);
+            new(true, ResultStatus.Created, data, null);
 
+        // ✅ Deleted
         public static DataResponse<T> Deleted() =>
-            new DataResponse<T>(true, ResultStatus.Deleted, default, null);
+            new(true, ResultStatus.Deleted, default, null);
 
+        // ❌ Bad Request
         public static DataResponse<T> BadRequest(IEnumerable<string> errors) =>
-            new DataResponse<T>(false, ResultStatus.BadRequest, default, errors);
+            new(false, ResultStatus.BadRequest, default, errors);
 
-        public static DataResponse<T> Unauthorized(string error) =>
-            new DataResponse<T>(false, ResultStatus.Unauthorized, default, new[] { error });
+        // ❌ Unauthorized
+        public static DataResponse<T> Unauthorized(IEnumerable<string> errors) =>
+            new(false, ResultStatus.Unauthorized, default, errors);
 
+        // ❌ Not Found
         public static DataResponse<T> NotFound(string error) =>
-            new DataResponse<T>(false, ResultStatus.NotFound, default, new[] { error });
+            new(false, ResultStatus.NotFound, default, new[] { error });
 
+        // ❌ Unprocessable Entity
         public static DataResponse<T> UnprocessableEntity(IEnumerable<string> errors) =>
-            new DataResponse<T>(false, ResultStatus.UnprocessableEntity, default, errors);
+            new(false, ResultStatus.UnprocessableEntity, default, errors);
     }
 }
