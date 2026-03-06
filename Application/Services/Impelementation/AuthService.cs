@@ -1,6 +1,9 @@
 ﻿using Application.DTOs.LoginUserDto;
+using Application.DTOs.UserById;
 using Application.Features.Users.Commands.Register;
+using Application.Features.Users.Commands.UpdateUser;
 using Application.Interfaces;
+using Application.Models;
 using Application.Responses;
 using Domain.Entities.System;
 using Infrastructure.Helper;
@@ -17,6 +20,69 @@ namespace Application.Services.Impelementation
         {
             _userManager = userManager;
             _jwtTokenGenerator = jwtTokenGenerator;
+        }
+
+        public async Task<DataResponse<string>> DeleteUserAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+                return DataResponse<string>.NotFound("User not found");
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (!result.Succeeded)
+                return DataResponse<string>.BadRequest(result.Errors.Select(e => e.Description));
+
+            return DataResponse<string>.Deleted();
+        }
+
+        public async Task<DataResponse<PaginatedList<UserDto>>> GetAllUsersAsync(int page, int pageSize)
+        {
+            var query = _userManager.Users
+       .Select(x => new UserDto
+       {
+           Id = x.Id,
+           PhoneNumber = x.PhoneNumber,
+           University = x.University,
+           Major = x.Major,
+           UserName = x.UserName,
+           Email = x.Email,
+           FirstName = x.FirstName,
+           LastName = x.LastName,
+           City = x.City,
+           Country = x.Country
+       });
+
+            var paginatedUsers = await PaginatedList<UserDto>
+                .CreateAsync(query, page, pageSize);
+
+            return DataResponse<PaginatedList<UserDto>>
+                .Success(paginatedUsers, "");
+        }
+
+        public async Task<DataResponse<UserDto>> GetUserByIdAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+
+            if (user == null)
+                return DataResponse<UserDto>.NotFound("User not found");
+
+            var dto = new UserDto
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                City = user.City,
+                Country = user.Country,
+                University = user.University,
+                Major = user.Major
+            };
+
+            return DataResponse<UserDto>.Success(dto, "");
         }
 
         public async Task<DataResponse<AuthResultDto>> LoginAsync(string email, string password)
@@ -98,6 +164,33 @@ namespace Application.Services.Impelementation
 
                 return DataResponse<string>.Created("User registered successfully.");
             }
+        }
+
+        public async Task<DataResponse<string>> UpdateUserAsync(UpdateUserCommand command)
+        {
+            var user = await _userManager.FindByIdAsync(command.Id);
+
+            if (user == null)
+                return DataResponse<string>.NotFound("User not found");
+            user.FirstName = command.FirstName;
+            user.LastName = command.LastName;
+            user.Email = command.Email;
+            user.UserName = command.UserName;
+            user.DateOfBirth = command.DateOfBirth;
+            user.PersonGender = command.PersonGender;
+            user.PhoneNumber = command.PhoneNumber;
+            user.City = command.City;
+            user.Country = command.Country;
+            user.University = command.University;
+            user.Major = command.Major;
+
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+                return DataResponse<string>.BadRequest(result.Errors.Select(e => e.Description));
+
+            return DataResponse<string>.Success("User updated successfully");
         }
     }
 }

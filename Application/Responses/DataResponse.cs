@@ -43,6 +43,33 @@ namespace Application.Responses
                 Message = ""
             };
         }
+        public static DataResponse<T> Success(string message, T data = default)
+        {
+            return new DataResponse<T>
+            {
+                IsSuccess = true,
+                Message = message,
+                Data = data
+            };
+        }
+        public DataResponse<T> Success<T>(string meesage)
+        {
+            return new DataResponse<T>()
+            {
+
+                StatusCode = System.Net.HttpStatusCode.OK,
+                Succeeded = true,
+                Message = "Successefuly"
+            };
+        }
+        public static DataResponse<T> Failure(string message)
+        {
+            return new DataResponse<T>
+            {
+                IsSuccess = false,
+                Message = message
+            };
+        }
         // ✅ Success
         public static DataResponse<T> Success(T data, string meesage) =>
             new(true, ResultStatus.Success, data, null);
