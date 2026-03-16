@@ -1,14 +1,18 @@
 ﻿# Build Stage
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+
 WORKDIR /src
 
-# انسخ فقط مجلد المشروع اللي فيه .csproj
+# انسخ كل مجلدات المشروع اللي فيه solution و المشاريع الفرعية
 COPY X-ChangeWebBackend/ X-ChangeWebBackend/
+COPY Domain/ Domain/
+COPY Application/ Application/
+COPY Infrastructure/ Infrastructure/
 
-# انتقل إلى مجلد المشروع قبل البناء
+# اذهب لمجلد المشروع اللي فيه .sln
 WORKDIR /src/X-ChangeWebBackend
 
-# اعمل build
+# نفذ build + publish
 RUN dotnet publish -c Release -o /app/publish
 
 # Runtime Stage
