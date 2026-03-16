@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("X-ChangeWebBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35706f787961ea4ee26492da964aaee67ef34bd4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+431535be2a42e8350a6238ef5b8797d86f7f8a36")]
 [assembly: System.Reflection.AssemblyProductAttribute("X-ChangeWebBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("X-ChangeWebBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
