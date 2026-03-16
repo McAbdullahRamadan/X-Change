@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAcwBUAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-16T04:46:37.01Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-16T05:36:26.53Z",
               "EditorCaption": ""
             }
           ]

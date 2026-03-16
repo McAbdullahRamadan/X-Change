@@ -61,7 +61,7 @@ namespace Infrastructure.Helper
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenExpireDate),
+                expires: DateTime.UtcNow.AddDays(_jwtSettings.AccessTokenExpireDate),
                 signingCredentials: credentials
             );
 
