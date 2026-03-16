@@ -21,6 +21,7 @@ namespace Infrastructure.Helper
             _userManager = userManager;
 
         }
+
         public async Task<List<Claim>> GetClaims(ApplicationUser user)
         {
             var roles = await _userManager.GetRolesAsync(user);
@@ -58,7 +59,7 @@ namespace Infrastructure.Helper
 
             var token = new JwtSecurityToken(
                 issuer: _jwtSettings.Issuer,
-                audience: _jwtSettings.audience,
+                audience: _jwtSettings.Audience,
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(_jwtSettings.AccessTokenExpireDate),
                 signingCredentials: credentials
@@ -74,7 +75,7 @@ namespace Infrastructure.Helper
             var refreshToken = new RefreshToken
             {
                 Token = Guid.NewGuid().ToString(),
-                Expires = DateTime.UtcNow.AddDays(7),
+                Expires = DateTime.UtcNow.AddDays(1),
                 UserId = user.Id
             };
 

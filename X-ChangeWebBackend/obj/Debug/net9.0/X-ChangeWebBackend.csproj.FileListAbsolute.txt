@@ -1,8 +1,6 @@
-C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
-C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\appsettings.json
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\X-ChangeWebBackend.staticwebassets.runtime.json
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\X-ChangeWebBackend.staticwebassets.endpoints.json
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\X-ChangeWebBackend.exe
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\X-ChangeWebBackend.deps.json
@@ -13,6 +11,7 @@ C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Ardal
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\AutoMapper.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Azure.Core.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Azure.Identity.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\CloudinaryDotNet.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\FluentValidation.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Humanizer.dll
@@ -66,6 +65,10 @@ C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Micro
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Microsoft.SqlServer.Server.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Mono.TextTemplating.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.CodeDom.dll
@@ -74,6 +77,7 @@ C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\Syste
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Composition.Hosting.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Composition.Runtime.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Composition.TypedParts.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.Drawing.Common.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
@@ -104,6 +108,7 @@ C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\ja\Mi
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -147,6 +152,7 @@ C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\tr\Mi
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Mohamed\source\repos\X-Change\X-ChangeWebBackend\bin\Debug\net9.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll

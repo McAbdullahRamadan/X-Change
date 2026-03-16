@@ -15,6 +15,14 @@ namespace Application.Features.Users.Commands.UpdateUser
 
         public async Task<DataResponse<string>> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
+            // التحقق من أن request مش null
+            if (request == null)
+                return DataResponse<string>.BadRequest([""]);
+
+            // التحقق من وجود Id
+            if (string.IsNullOrEmpty(request.Id))
+                return DataResponse<string>.BadRequest([""]);
+
             return await _authService.UpdateUserAsync(request);
         }
     }

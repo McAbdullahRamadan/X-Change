@@ -168,22 +168,30 @@ namespace Application.Services.Impelementation
 
         public async Task<DataResponse<string>> UpdateUserAsync(UpdateUserCommand command)
         {
+            if (command == null)
+                return DataResponse<string>.BadRequest([""]);
+
             var user = await _userManager.FindByIdAsync(command.Id);
 
             if (user == null)
                 return DataResponse<string>.NotFound("User not found");
-            user.FirstName = command.FirstName;
-            user.LastName = command.LastName;
-            user.Email = command.Email;
-            user.UserName = command.UserName;
-            user.DateOfBirth = command.DateOfBirth;
-            user.PersonGender = command.PersonGender;
-            user.PhoneNumber = command.PhoneNumber;
-            user.City = command.City;
-            user.Country = command.Country;
-            user.University = command.University;
-            user.Major = command.Major;
 
+            // تحديث البيانات مع التحقق من null
+            user.FirstName = command.FirstName ?? user.FirstName;
+            user.LastName = command.LastName ?? user.LastName;
+            user.Email = command.Email ?? user.Email;
+            user.UserName = command.UserName ?? user.UserName;
+            user.PhoneNumber = command.PhoneNumber ?? user.PhoneNumber;
+            user.City = command.City ?? user.City;
+            user.Country = command.Country ?? user.Country;
+            user.University = command.University ?? user.University;
+            user.Major = command.Major ?? user.Major;
+
+            // الحقول الإضافية
+
+
+            if (command.DateOfBirth.HasValue)
+                user.DateOfBirth = command.DateOfBirth.Value;
 
             var result = await _userManager.UpdateAsync(user);
 

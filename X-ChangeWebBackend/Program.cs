@@ -1,10 +1,10 @@
-using Application.Behaviors;
+﻿using Application.Behaviors;
 using Application.Features.Users.Commands.Register;
-using Domain.Entities.System;
+using Application.Interfaces;
+using Application.Services.Impelementation;
 using Infrastructure;
 using Infrastructure.Helper;
 using MediatR;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,20 +18,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 );
 
 builder.AddApplicationServices();
-builder.Services.AddInfrastructure();
+builder.Services.AddInfrastructure().AddServiceRegisteration(builder.Configuration);
 
 
 
-builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
-{
-    options.Password.RequireUppercase = true;
-    options.Password.RequireLowercase = true;
-    options.Password.RequireDigit = false;
-    options.Password.RequireNonAlphanumeric = false;
 
-})
-.AddEntityFrameworkStores<ApplicationDbContext>()
-.AddDefaultTokenProviders();
 // Add services to the container.
 
 builder.Services.AddMediatR(cfg =>
@@ -47,13 +38,14 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
-builder.Services.Configure<JwtSettings>(
-    builder.Configuration.GetSection("JwtSettings"));
+
 
 
 builder.Services.AddScoped<IJwtTokenGenerator, JwtTokenGenerator>();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+//builder.Services.AddOpenApi();
+//builder.Services.AddSwaggerGen();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("XChange",
@@ -64,6 +56,14 @@ builder.Services.AddCors(options =>
                   .AllowAnyMethod();
         });
 });
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<ILocalStorageService, LocalStorageService>();
+
+// ✅ تسجيل IPhotoService
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+
+// ✅ تسجيل HttpClient (للـ Cloudinary)
+builder.Services.AddHttpClient();
 var app = builder.Build();
 
 
@@ -72,14 +72,15 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/openapi/v1.json", "api");
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "X-Change API v1");
     });
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseCors("XChange");
 app.UseAuthentication();
 

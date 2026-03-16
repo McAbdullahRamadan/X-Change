@@ -62,6 +62,15 @@ namespace Application.Responses
                 Message = "Successefuly"
             };
         }
+        public DataResponse<T> BadRequest<T>(string message = null)
+        {
+            return new DataResponse<T>()
+            {
+                StatusCode = System.Net.HttpStatusCode.BadRequest,
+                Succeeded = false,
+                Message = message == null ? "BadRequst" : message,
+            };
+        }
         public static DataResponse<T> Failure(string message)
         {
             return new DataResponse<T>

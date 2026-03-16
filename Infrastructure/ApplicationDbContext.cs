@@ -22,6 +22,7 @@ namespace Infrastructure
         public DbSet<Enrollment> Enrollments => Set<Enrollment>();
         public DbSet<ApplicationUserPasswordHistory> PasswordHistories => Set<ApplicationUserPasswordHistory>();
         public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+        public DbSet<UserPhoto> UserPhotos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder builder)
@@ -33,6 +34,16 @@ namespace Infrastructure
                    .Property(x => x.Price)
                    .HasColumnType("decimal(18,2)")
                    .IsRequired();
+            //UserPhoto Relationships and Indexes
+            builder.Entity<UserPhoto>(entity =>
+            {
+                entity.HasOne(p => p.User)
+                      .WithMany(u => u.Photos)
+                      .HasForeignKey(p => p.UserId)
+                      .OnDelete(DeleteBehavior.Cascade);
+
+                entity.HasIndex(p => new { p.UserId, p.PhotoType, p.IsCurrent });
+            });
 
             // Relationships Business Entities
             builder.Entity<Course>()

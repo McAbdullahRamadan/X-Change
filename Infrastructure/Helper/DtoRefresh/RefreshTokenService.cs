@@ -46,9 +46,9 @@ namespace Infrastructure.Helper.DtoRefresh
 
             var refreshTokenEntityes = new RefreshToken
             {
-                Token = newRefreshToken,
-                Expires = DateTime.UtcNow.AddDays(7),
-                UserId = user.Id
+                TokenSting = newRefreshToken,
+                ExpireAt = DateTime.UtcNow.AddDays(7),
+                UserName = user.Id
             };
 
             _context.RefreshTokens.Add(refreshTokenEntity);

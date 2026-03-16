@@ -19,8 +19,13 @@ namespace Domain.Entities.System
         public string? Major { get; set; }
         public string? RefreshToken { get; set; } = null!;
         public DateTime? RefreshTokenExpiration { get; set; }
+        public string? ProfilePictureUrl { get; set; }
+        public string? ProfilePicturePublicId { get; set; }
+        public string? CurrentProfilePictureUrl { get; set; }
+        public string? CurrentCoverPictureUrl { get; set; }
 
         public ICollection<Course> Courses { get; set; } = new List<Course>();
+        public ICollection<UserPhoto> Photos { get; set; } = new List<UserPhoto>();
         public ICollection<ApplicationUserClaim> Claims { get; set; } = new List<ApplicationUserClaim>();
         public ICollection<ApplicationUserRole> UserRoles { get; set; } = new List<ApplicationUserRole>();
         public ICollection<ApplicationUserLogin> Logins { get; set; } = new List<ApplicationUserLogin>();
