@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Application/DTOs/AuthResultDto.cs
+/Application/DTOs/AuthResultDto.cs
+/X-ChangeWebBackend/.vs/X-ChangeWebBackend/FileContentIndex/887c08a3-1b04-4964-9d42-6b7521a21ddd.vsidx
+*.vsidx
