@@ -13,7 +13,10 @@ namespace Application.Interfaces
         Task<DataResponse<UserDto>> GetUserByIdAsync(string userId);
 
         Task<DataResponse<string>> UpdateUserAsync(UpdateUserCommand command);
-
+        public Task<string> SendResetPasswordCode(string Email);
+        public Task<string> ResetPassword(string email, string Password);
+        public Task<string> ConfirmEmail(string? userId, string? code);
+        public Task<string> ConfirmResetPasswordCode(string code, string email);
         Task<DataResponse<string>> DeleteUserAsync(string userId);
         Task<DataResponse<string>> RegisterAsync(RegisterUserCommand request);
         Task<DataResponse<AuthResultDto>> LoginAsync(string email, string password);

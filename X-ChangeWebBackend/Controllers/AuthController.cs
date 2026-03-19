@@ -3,8 +3,12 @@ using Application.Features.Users.Commands.LoginUserAuth;
 using Application.Features.Users.Commands.LoginUserAuth.Logout;
 using Application.Features.Users.Commands.LoginUserAuth.RefreshTokens;
 using Application.Features.Users.Commands.Register;
+using Application.Features.Users.Commands.ResetPassword;
+using Application.Features.Users.Commands.SendResetPassword;
 using Application.Features.Users.Commands.UpdateUser;
 using Application.Features.Users.Query;
+using Application.Features.Users.Query.ConfirmEmail;
+using Application.Features.Users.Query.ConfirmResetPassword;
 using Application.Features.Users.Query.GetAllUser;
 using Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -48,11 +52,10 @@ namespace X_ChangeWebBackend.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateUser(UpdateUserCommand command)
         {
-            // تأكد إن البيانات مش null
+
             if (command == null)
                 return BadRequest("Command cannot be null");
 
-            // تأكد من وجود Id
             if (string.IsNullOrEmpty(command.Id))
                 return BadRequest("User Id is required");
 
@@ -81,6 +84,30 @@ namespace X_ChangeWebBackend.Controllers
         {
             var result = await Mediator.Send(command);
             return Ok(result);
+        }
+        [HttpPost("SendResetPasswordCommand")]
+        public async Task<IActionResult> SendResetPassword([FromQuery] SendResetPasswordCommand Command)
+        {
+            var response = await Mediator.Send(Command);
+            return Ok(response);
+        }
+        [HttpPost("ResetPassword")]
+        public async Task<IActionResult> ResetPassword([FromForm] ResetPasswordCommand Command)
+        {
+            var response = await Mediator.Send(Command);
+            return Ok(response);
+        }
+        [HttpGet("ConfirmEmail")]
+        public async Task<IActionResult> ConfirmEmail([FromQuery] ConfirmEmailQuery Query)
+        {
+            var response = await Mediator.Send(Query);
+            return Ok(response);
+        }
+        [HttpGet("ConfirmResetPassword")]
+        public async Task<IActionResult> ConfirmResetPasswordCode([FromQuery] ConfirmResetPasswordQuery Query)
+        {
+            var response = await Mediator.Send(Query);
+            return Ok(response);
         }
         [HttpPost("refresh")]
         public async Task<IActionResult> Refresh([FromBody] string refreshToken)

@@ -1,5 +1,7 @@
 ﻿using Domain.Entities.Business;
+using EntityFrameworkCore.EncryptColumn.Attribute;
 using Microsoft.AspNetCore.Identity;
+
 
 namespace Domain.Entities.System
 {
@@ -23,6 +25,8 @@ namespace Domain.Entities.System
         public string? ProfilePicturePublicId { get; set; }
         public string? CurrentProfilePictureUrl { get; set; }
         public string? CurrentCoverPictureUrl { get; set; }
+        [EncryptColumn]
+        public string? Code { get; set; }
 
         public ICollection<Course> Courses { get; set; } = new List<Course>();
         public ICollection<UserPhoto> Photos { get; set; } = new List<UserPhoto>();

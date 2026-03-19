@@ -51,6 +51,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "EntityFrameworkCore.EncryptColumn": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[14.0.0, )"

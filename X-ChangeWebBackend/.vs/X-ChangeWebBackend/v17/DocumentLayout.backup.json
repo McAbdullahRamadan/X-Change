@@ -3,15 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\x-changewebbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{82B2723B-6596-4A8A-A9DE-5D39B99F1365}|X-ChangeWebBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\query\\confirmresetpassword\\confirmresetpasswordhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9FFD437-04B4-4B1B-A57D-3C9086C493FB}|..\\Infrastructure\\Infrastructure.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\infrastructure\\helper\\jwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\services\\impelementation\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE9675F-5F2B-425B-A14C-9B0AEF3C3EFD}|..\\Application\\Application.csproj|c:\\users\\mohamed\\source\\repos\\x-change\\application\\features\\users\\commands\\resetpassword\\resetpasswordcommandhandle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -37,41 +39,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T07:26:40.815Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "JwtTokenGenerator.cs",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
-              "RelativeDocumentMoniker": "..\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
-              "RelativeToolTip": "..\\Infrastructure\\Helper\\JwtTokenGenerator.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAwwD8AAAAwAAAAAAAAAA==",
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Services\\Impelementation\\AuthService.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Services\\Impelementation\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Services\\Impelementation\\AuthService.cs",
+              "RelativeToolTip": "..\\Application\\Services\\Impelementation\\AuthService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAEwAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T06:13:06.284Z",
+              "WhenOpened": "2026-03-19T04:50:17.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-16T05:36:26.53Z",
+              "Title": "ConfirmResetPasswordHandle.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Query\\ConfirmResetPassword\\ConfirmResetPasswordHandle.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Query\\ConfirmResetPassword\\ConfirmResetPasswordHandle.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Query\\ConfirmResetPassword\\ConfirmResetPasswordHandle.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Users\\Query\\ConfirmResetPassword\\ConfirmResetPasswordHandle.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwAsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:42:51.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\X-ChangeWebBackend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHAAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:04:19.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ResetPasswordCommandHandle.cs",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\ResetPassword\\ResetPasswordCommandHandle.cs",
+              "RelativeDocumentMoniker": "..\\Application\\Features\\Users\\Commands\\ResetPassword\\ResetPasswordCommandHandle.cs",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\X-Change\\Application\\Features\\Users\\Commands\\ResetPassword\\ResetPasswordCommandHandle.cs",
+              "RelativeToolTip": "..\\Application\\Features\\Users\\Commands\\ResetPassword\\ResetPasswordCommandHandle.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T03:54:12.478Z",
               "EditorCaption": ""
             }
           ]
